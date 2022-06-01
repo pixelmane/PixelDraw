@@ -48,6 +48,8 @@ body,html {
   
 }
 #gameBoard {
+  display:flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   height: calc(var(--h));
   width: calc(var(--h));
