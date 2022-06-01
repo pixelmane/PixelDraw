@@ -1,7 +1,9 @@
 html {
   height: 100%;
 }
-
+body {
+  overscroll-behavior: contain;
+}
 body,html {
   margin: 0;
   padding: 0;
