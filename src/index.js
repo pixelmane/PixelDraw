@@ -2,7 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+const convertStyle = () => {
+  const height = window.innerHeight;
+  document.getElementById('gameBoard').style.height = `${height}px`;
+  };
 
+window.addEventListener("resize", convertStyle);
+window.addEventListener("DOMContentLoaded", convertStyle);
 class Square extends React.Component {
   constructor(props){
     super(props);
