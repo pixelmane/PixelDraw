@@ -62,7 +62,7 @@ body,html {
   display: flex;
   margin: 0;
   padding: 0;
-   
+   height: 100vh;
   }
   #gridToggle {
     position: relative;
