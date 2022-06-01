@@ -1,10 +1,7 @@
 html {
   height: 100%;
 }
-body {
-  position: fixed;
-  height: 100%;
-}
+
 body,html {
   margin: 0;
   padding: 0;
@@ -18,7 +15,7 @@ body,html {
   width: 100%;
 }
 #color {
-  z-index:;
+ 
   color: white;
 }
 #select {
