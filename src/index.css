@@ -54,7 +54,7 @@ body,html {
   box-sizing: border-box;
   height: calc(var(--h));
   width: calc(var(--h));
- 
+  height: -webkit-fill-available;
   
   border: none;
 
