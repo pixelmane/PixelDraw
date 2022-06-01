@@ -5,6 +5,7 @@ import './index.css';
 const convertStyle = () => {
   const height = window.innerHeight;
   document.getElementById('gameBoard').style.height = `${height}px`;
+  document.getElementById('controls').style.height = `${height}px`
   };
 
 window.addEventListener("resize", convertStyle);
