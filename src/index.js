@@ -12,6 +12,7 @@ const convertStyle = () => {
     piecesArr[p].style.height = `${height / axis}px`
     piecesArr[p].style.width = `${height / axis}px`
   }
+  let p = 0; 
 }
 
 
