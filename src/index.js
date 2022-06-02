@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+let axis = 10;
 const convertStyle = () => {
   const height = window.innerHeight;
   document.getElementById('main').style.height = `${height}px`
@@ -9,8 +9,8 @@ const convertStyle = () => {
   document.getElementById('controls').style.height = `${height}px`
   let piecesArr = document.getElementsByClassName('pieces')
   for(let p = 0; p < piecesArr.length; p++){
-    piecesArr[p].style.height = `${height / 10}px`
-    piecesArr[p].style.width = `${height / 10}px`
+    piecesArr[p].style.height = `${height / axis}px`
+    piecesArr[p].style.width = `${height / axis}px`
   }
 }
 
@@ -106,6 +106,8 @@ class Board extends React.Component {
   handleGrid(gridSize){
     let r = document.querySelector(':root')
     r.style.setProperty('--size', gridSize)
+    axis = gridSize
+    convertStyle()
     this.setState({
       mySize: gridSize
     })
