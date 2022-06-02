@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-document.addEventListener("touchmove" , onTouchMove)
-function onTouchMove(e) {
-  e.preventDefault()
-}
+
 const convertStyle = () => {
   const height = window.innerHeight;
+  document.getElementById('main').style.height = `${height}px`
   document.getElementById('gameBoard').style.height = `${height}px`;
   document.getElementById('controls').style.height = `${height}px`
   };
