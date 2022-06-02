@@ -14,7 +14,7 @@ const convertStyle = () => {
   }
 }
 
-window.addEventListener("resize", convertStyle);
+
 window.addEventListener("DOMContentLoaded", convertStyle);
 class Square extends React.Component {
   constructor(props){
