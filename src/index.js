@@ -7,9 +7,12 @@ const convertStyle = () => {
   document.getElementById('main').style.height = `${height}px`
   document.getElementById('gameBoard').style.height = `${height}px`;
   document.getElementById('controls').style.height = `${height}px`
-  document.getElementById('pieces').style.height = `${height / 10}px`;
-  document.getElementById('pieces').style.width = `${height / 10}px`
-  };
+  let piecesArr = document.getElementsByClassName('pieces')
+  for(let p = 0; p < piecesArr.length; p++){
+    piecesArr[p].style.height = `${height / 10}px`
+    piecesArr[p].style.width = `${height / 10}px`
+  }
+}
 
 window.addEventListener("resize", convertStyle);
 window.addEventListener("DOMContentLoaded", convertStyle);
