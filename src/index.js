@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-let axis = 10;
+let axis = 50;
 const convertStyle = () => {
   const height = window.innerHeight;
   document.getElementById('main').style.height = `${height}px`
@@ -44,7 +44,7 @@ class Board extends React.Component {
       myArray: [],
       myBackground: [],
       myColor: 'black',
-      mySize: 10,
+      mySize: 50,
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleTouch = this.handleTouch.bind(this)
@@ -165,9 +165,10 @@ class Sizing extends React.Component {
         <h4>Grid Size:</h4>
       <div>
         <select onChange={this.handleChange}>
+        <option value={50}>50x50</option>
           <option  value={10}>10x10</option>
           <option  value={20}>20x20</option>
-          <option value={50}>50x50</option>
+          
         </select>
       </div>
       </div>
