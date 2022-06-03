@@ -108,11 +108,11 @@ class Board extends React.Component {
     let r = document.querySelector(':root')
     r.style.setProperty('--size', gridSize)
     axis = gridSize
-    
+    convertStyle()
     this.setState({
       mySize: gridSize
     })
-    convertStyle()
+    
   }
   handleClear() {
     let myBackground = this.state.myBackground.slice(0, this.state.mySize * this.state.mySize)
